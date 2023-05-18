@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+    :root {
+        scroll-behavior: smooth;
+      }
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 200px;
+    background-image: url(../images/background.jpg);
+    color: black;
+}
+
+header, footer {
+    background-color: rgba(12,12,12,255);
+    color: white;
+}
+header {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.logo {
+    max-width: 110px;
+    height: auto;
+}
+footer p {
+    background-color: black;
+    margin: 0;
+    color: #a3a6a9;
+}
+.foothaut {
+    background-color: rgba(52,58,64,255);
+}   
+
+.icon {
+    width: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.titredepage {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+    text-align: center;
+}
+.cv:hover {
+color: rgb(27, 97, 201);
+}
+
+i {
+    font-size: 20px;
+}
+.list {
+    list-style: none;
+    padding-left: 0%;
+}
+
+i {
+    width: 16px;
+    height: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+img {
+max-width: 250px;
+}
+
+.wrap {
+   flex-wrap: wrap;
+}
+
+.justifier{
+    text-align: justify;
+}
+
+main section {
+    width: 30%;
+}
+/* Pour centrer liens barre de nav : */
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+section {
+    margin-bottom: 30px;
+}
+.mailButton {
+    border-color: #594ae1;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.mailButton a {
+    text-decoration: none;
+    padding: 5px;
+    }
+
+.mailButton {
+    transition-duration: 0.4s;
+  }
+  
+  .mailButton:hover {
+    background-color: #594ae1; 
+  }
+  .mailButton:hover a{
+    color: white;
+  }
+  
+.cliccv {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: x-large;
+}
+.buttonCv, .buttonProjet{
+    border-color: #594ae1;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.buttonCv:hover, .buttonProjet:hover {
+    background-color: #594ae1;
+  }
+  .buttonCv:hover a, .buttonProjet:hover a {
+      color: white;
+  }
+.buttonProjet a{
+    text-decoration: none;
+    display: block;
+}
+.buttonProjet{
+    width: 100%;
+}
+.welcome {
+    color: #594ae1;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.boutonAncre {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  color: #594ae1;
+  cursor: pointer;
+}
+  .boutonAncre:hover {
+color: #82888d
+  }  
+
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }}
+/* solution au bug menu mobile transparent */
+    @media screen and (max-width: 991px) {
+        .fondMenuMobile {
+             background-color: #343a40;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .navbar-nav > li {
+             display: block;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+        }
+        
